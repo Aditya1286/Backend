@@ -1,0 +1,19 @@
+Express Validator is a set of middleware functions for validating and sanitizing input data in Express.js applications.
+
+You use it when:
+
+Validating request body, params, query (e.g., checking email is valid)
+
+Sanitizing inputs (e.g., trimming spaces)
+
+Handling validation errors
+
+It helps prevent:
+
+Wrong input
+
+Missing fields
+
+SQL injection
+
+XSS attacks (basic level)

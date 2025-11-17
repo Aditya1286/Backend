@@ -10,7 +10,6 @@ function authentication(req, res, next) {
   } else {
     console.log('You are not authenticated.');
   }
-  
   next();
 }
 
