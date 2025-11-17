@@ -1,0 +1,7 @@
+To Reques send a html file in GET Method
+First way
+app.get('/',(req,res)=>{
+    res.sendFile('./les1.html',{root:__dirname});
+});
+
+We can also do chaining of the request 

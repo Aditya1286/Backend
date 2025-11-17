@@ -1,0 +1,15 @@
+
+MIDDLEWARAE
+This is used for lose coupling they have the access in the middle to call some function and changes in between the processing the code 
+
+This is the way we create middleware
+code:
+app.use((req,res,next)=>{
+    next()// if we not the call the next it will stuck in between never call the app.get/post
+})
+Some of the precreated MIDDLEWARAE are:-
+1.urlencoded
+2.JSONparse
+
+
+If we change any changes in req and res it will show throughout the other middleware either in the GET/POST

@@ -1,0 +1,6 @@
+{
+  "username": "admin"
+}{
+  "username": "adit",
+  "email": "aishwaryaaditya2@gmail.com"
+}

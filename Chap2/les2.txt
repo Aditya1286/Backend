@@ -1,0 +1,8 @@
+Routing is done simply create a router folder inside that create a page
+Then in the page import express
+call express.Router() instead of express();
+then connect the main page with middleware;
+import the particular file in which you want the routing 
+then
+app.use('user',filename);
+This will connect the routing to the particular page

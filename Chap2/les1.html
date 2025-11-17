@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP Request Types</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .method {
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .get { background-color: #3b82f6; }     /* Blue */
+    .post { background-color: #10b981; }    /* Green */
+    .put { background-color: #f59e0b; }     /* Amber */
+    .delete { background-color: #ef4444; }  /* Red */
+    .patch { background-color: #8b5cf6; }   /* Purple */
+
+    p {
+      color: #444;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Types of HTTP Requests</h1>
+
+  <div class="container">
+    <div class="card">
+      <div class="method get">GET</div>
+      <p>Used to <strong>retrieve data</strong> from a server without making any changes.</p>
+    </div>
+
+    <div class="card">
+      <div class="method post">POST</div>
+      <p>Used to <strong>send or create data</strong> on the server, such as submitting a form.</p>
+    </div>
+
+    <div class="card">
+      <div class="method put">PUT</div>
+      <p>Used to <strong>update or replace</strong> existing data completely on the server.</p>
+    </div>
+
+    <div class="card">
+      <div class="method delete">DELETE</div>
+      <p>Used to <strong>remove data</strong> from the server permanently.</p>
+    </div>
+
+    <div class="card">
+      <div class="method patch">PATCH</div>
+      <p>Used to <strong>partially update</strong> data on the server without replacing it entirely.</p>
+    </div>
+  </div>
+</body>
+</html>

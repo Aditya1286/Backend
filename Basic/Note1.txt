@@ -1,0 +1,13 @@
+Common codes:
+
+Code	Meaning
+200	    OK (success)
+201	    Created (used after POST creating a resource)
+301	    Moved Permanently (redirect)
+400	    Bad Request (client error)
+401	    Unauthorized
+403	    Forbidden
+404	    Not Found
+500	    Internal Server Error
+
+Status codes are always sent before the body, along with headers.

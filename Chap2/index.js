@@ -1,0 +1,1 @@
+console.log("Hi this is the Practice Repo for the Chapter 2 of Node js");
