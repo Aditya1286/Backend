@@ -1,0 +1,11 @@
+🔥 What is app.all() in Express?
+
+app.all() is used to handle all HTTP methods (GET, POST, PUT, DELETE, PATCH, OPTIONS, etc.) for a specific route.
+
+👉 Normal routes handle specific HTTP methods.
+
+Method	Purpose
+app.get()	Fetching data
+app.post()	Sending data
+app.put()	Updating data
+app.delete()	Removing dat

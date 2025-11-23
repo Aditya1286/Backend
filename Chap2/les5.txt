@@ -1,19 +1,11 @@
-Express Validator is a set of middleware functions for validating and sanitizing input data in Express.js applications.
+Cookie Parser
+we use this to set the cookie with the key value pair 
+Syntax: res.cookie()
+example: res.cookie("key","value",{maxAge:6000})
 
-You use it when:
 
-Validating request body, params, query (e.g., checking email is valid)
+To read  the cookie we need to use middleware known as cookieParser()
 
-Sanitizing inputs (e.g., trimming spaces)
-
-Handling validation errors
-
-It helps prevent:
-
-Wrong input
-
-Missing fields
-
-SQL injection
-
-XSS attacks (basic level)
+ then if we want this to show the read cookie into server we can do this
+ res.send(JSON.stringify(req.cookie));
+ This will show the cookie in json format 

@@ -1,0 +1,13 @@
+How to Create Your Own Middleware in Express.js (3 Marks)
+
+Middleware in Express.js is a function that has access to the request, response, and next function. It is used to perform tasks like logging, authentication, or modifying request data before passing it to the next handler.
+
+Steps to create custom middleware:
+
+Define a function that takes req, res, and next as parameters.
+
+Write your logic (e.g., logging, checking condition).
+
+Use next() to pass control to the next middleware or route.
+
+Apply it using app.use() or directly in a route.

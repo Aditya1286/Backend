@@ -1,0 +1,5 @@
+express-session
+-This is the middleware in express used to store session data in server and only the session id is stored in the browser inside the cookie 
+-install needed
+npm install express-session
+there is something called httpOnly: True which is used to avoid future accessiblity or modification using javascript of the cookeis 
