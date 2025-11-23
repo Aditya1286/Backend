@@ -1,5 +1,4 @@
-import express from 'express';
-import fs from 'fs';
+import express from 'express';\
 import path from 'path';
 import { fileURLToPath } from 'url';
 
