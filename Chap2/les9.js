@@ -1,13 +1,18 @@
 import express from 'express';
-import ani from './rout/ani.js';
+import cookieParser from 'cookie-parser';
 const app=express();
-app.use('/animal',ani);
+app.use(cookieParser());
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 app.get('/',(req,res)=>{
-    res.send("Hi this is a practice server");
+    res.cookie("name","Aditya",{
+        maxAge: 24*60*60*1000,
+    });
+    res.send("Cookie set");
 });
-app.get('/about',(req,res)=>{
-    res.send("Hi this server is created by naaz");
+app.get('/get',(req,res)=>{
+    res.send(JSON.stringify(req.cookies))
 });
 app.listen(3000,()=>{
-    console.log('Server is live at port 3000');
-});
+    console.log("server is live at 3000");
+})
